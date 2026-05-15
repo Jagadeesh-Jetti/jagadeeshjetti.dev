@@ -21,10 +21,10 @@ export default function AboutPage() {
         </h1>
         <div className="space-y-4 text-[15px] leading-[1.75] text-muted">
           <p>
-            I'm a full-stack web developer from Hyderabad, comfortable across the MERN
-            stack and lately spending more of my time in TypeScript, Prisma, and
-            PostgreSQL. I care about clean code, scalable architecture, and shipping
-            things people actually use.
+            I'm a full-stack web developer from Hyderabad with 2+ years of building
+            products end-to-end. Comfortable across the MERN stack and lately spending
+            more of my time in TypeScript, Prisma, and PostgreSQL. I care about clean
+            code, scalable architecture, and shipping things people actually use.
           </p>
           <p>
             My favorite kind of work sits at the seam between frontend, backend, and

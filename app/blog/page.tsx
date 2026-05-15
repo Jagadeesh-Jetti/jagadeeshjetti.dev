@@ -77,15 +77,18 @@ export default async function BlogPage() {
 function EmptyState() {
   return (
     <div className="rounded-xl border border-tint/[0.08] bg-surface p-8 text-center">
-      <p className="text-[14px] text-muted">
-        No posts yet — or the Hashnode feed couldn't be reached.
+      <h2 className="mb-2 text-[18px] font-medium text-text-bright">
+        My writing lives on Hashnode.
+      </h2>
+      <p className="mx-auto mb-4 max-w-[380px] text-[13px] leading-[1.6] text-muted">
+        Notes on building, debugging, and getting better. New posts every few weeks.
       </p>
       <Link
         href={site.socials.hashnode}
         target="_blank"
-        className="mt-3 inline-block font-mono text-[12px] text-emerald-700 dark:text-emerald-400 hover:underline"
+        className="inline-flex items-center gap-1.5 rounded-lg bg-text-bright px-4 py-2 text-[13px] font-medium text-bg transition-opacity hover:opacity-90"
       >
-        visit hashnode →
+        Read on Hashnode →
       </Link>
     </div>
   );

@@ -6,7 +6,7 @@ export const site = {
   shortName: 'Jagadeesh',
   title: 'Jagadeesh Jetti — Full-Stack Developer',
   description:
-    'Full-stack developer from Hyderabad building with MERN, TypeScript, and Postgres. Currently shipping FocusFlow and Sportify.',
+    'Full-stack developer from Hyderabad with 2+ years building products end-to-end across MERN, TypeScript, and Postgres.',
   url: 'https://jagadeeshjetti.dev',
   location: 'Hyderabad, India',
   email: 'jagadeeshjetti007@gmail.com',
@@ -27,11 +27,11 @@ export const intro = {
   headline: 'Full-stack developer from Hyderabad.',
   // Used inside the terminal `whoami` output
   lines: [
-    'Hey, I\'m Jagadeesh Jetti — a full-stack developer from Hyderabad.',
+    'Hey, I\'m Jagadeesh Jetti — a full-stack developer with 2+ years building products from Hyderabad.',
     'I build for the web across three angles:',
   ],
   roles: ['frontend', 'full-stack', 'product'],
-  tagline: 'Currently shipping FocusFlow & Sportify.',
+  tagline: 'Shipping production full-stack apps — most recent: Sportify and FocusFlow.',
 };
 
 export const skills = [
@@ -79,9 +79,9 @@ export const projects: Project[] = [
   {
     slug: 'focusflow',
     name: 'FocusFlow',
-    tagline: 'AI productivity planner — set goals, break into milestones, track progress.',
+    tagline: 'AI productivity planner — set goals, break them into milestones, ship them.',
     description:
-      'An AI-powered productivity tool designed to help users set long-term goals, break them down into actionable milestones, and stay on track with a clean dashboard.',
+      'An AI-powered productivity tool that turns long-term goals into actionable milestones, with a clean dashboard for daily tracking and OpenAI-generated suggestions when planning gets stuck.',
     status: 'live',
     year: '2025',
     role: 'Solo developer',
@@ -108,14 +108,16 @@ export const projects: Project[] = [
   {
     slug: 'sportify',
     name: 'Sportify',
-    tagline: 'Real-time sports event coordinator with live updates.',
+    tagline: 'Real-time sports event coordinator — live scores, organizer dashboard, instant participant sync.',
     description:
-      'A platform for organizing and following local sports events with live score updates, a dashboard for organizers, and real-time participant sync.',
-    status: 'wip',
+      'A platform for organizing and following local sports events. Live score broadcasts via Socket.io, an organizer dashboard for event setup, and a TypeScript-first backend with Prisma and PostgreSQL.',
+    status: 'live',
     year: '2025',
     role: 'Solo developer',
-    timeline: 'Ongoing',
-    codeUrl: 'https://github.com/Jagadeesh-Jetti/sportify_backend',
+    timeline: '10 weeks',
+    // TODO: paste live URL once deployed
+    // liveUrl: 'https://...',
+    codeUrl: 'https://github.com/Jagadeesh-Jetti/Sportfiy-v1',
     tech: ['TypeScript', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma', 'Socket.io', 'Tailwind CSS', 'React'],
     accent: 'from-slate-200 via-blue-100 to-blue-200 dark:from-slate-900 dark:via-blue-950 dark:to-blue-900',
     problem:
@@ -214,9 +216,10 @@ export const miniProjects = [
 export const now = {
   // Appears in the /about page "currently" section
   items: [
-    'Shipping features on FocusFlow and Sportify',
-    'Going deeper on Prisma, PostgreSQL, and Tailwind',
+    'Shipping iterations on FocusFlow and Sportify',
+    'Studying system design, distributed systems, and scalable backend patterns',
+    'Going deeper on TypeScript, Prisma, and PostgreSQL',
     'Writing on Hashnode about full-stack patterns I learn the hard way',
-    'Open to full-time roles — remote or Hyderabad-based',
+    'Open to full-time mid-level full-stack roles — remote or Hyderabad-based',
   ],
 };
