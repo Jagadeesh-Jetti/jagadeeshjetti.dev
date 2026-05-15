@@ -11,6 +11,21 @@ export type Post = {
   tags: string[];
 };
 
+type HashnodeTag = { name: string };
+
+type HashnodeEdge = {
+  node: {
+    slug: string;
+    title: string;
+    brief?: string;
+    publishedAt: string;
+    readTimeInMinutes?: number;
+    url: string;
+    coverImage?: { url: string } | null;
+    tags?: HashnodeTag[] | null;
+  };
+};
+
 const QUERY = `
   query Publication($host: String!, $first: Int!) {
     publication(host: $host) {
@@ -46,7 +61,7 @@ export async function getBlogPosts(first = 20): Promise<Post[]> {
     const json = await res.json();
     const edges = json?.data?.publication?.posts?.edges ?? [];
 
-    return edges.map((e: any) => ({
+    return (edges as HashnodeEdge[]).map((e) => ({
       slug: e.node.slug,
       title: e.node.title,
       brief: e.node.brief ?? '',
@@ -54,7 +69,7 @@ export async function getBlogPosts(first = 20): Promise<Post[]> {
       readTimeInMinutes: e.node.readTimeInMinutes ?? 5,
       url: e.node.url,
       coverImage: e.node.coverImage?.url,
-      tags: (e.node.tags ?? []).map((t: any) => t.name),
+      tags: (e.node.tags ?? []).map((t) => t.name),
     }));
   } catch (err) {
     console.error('Hashnode fetch failed:', err);

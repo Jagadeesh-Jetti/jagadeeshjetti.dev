@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowLeft, ArrowUpRight, ExternalLink, Github } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
 import { projects } from '@/data/site';
 import { cn } from '@/lib/utils';
 import { TechIcon } from '@/lib/tech-icons';
